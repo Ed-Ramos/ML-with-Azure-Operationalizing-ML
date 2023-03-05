@@ -76,8 +76,11 @@ by going to the "pipelines" section and clicking th pipeline name. Then Click on
 ![published pipeline showing rest endpoint as active.png](..%2Fproject2screenshots%2FPublish%20an%20ML%20Pipeline%2Fpublished%20pipeline%20showing%20rest%20endpoint%20as%20active.png)
 
 - Now that we have an active restpoint, we can interact with it.  We can schedule a run for a later time or trigger the
-run at this time.
+run at this time. Below is the trigger request 
+![Pipeline trigger in  jupyter notebook.png](..%2Fproject2screenshots%2FPublish%20an%20ML%20Pipeline%2FPipeline%20trigger%20in%20%20jupyter%20notebook.png)
 
+- Confirm that request was completed in Azure machine Learning Studio
+![Pipeline run request completed in Azure ML Studio.png](..%2Fproject2screenshots%2FPublish%20an%20ML%20Pipeline%2FPipeline%20run%20request%20completed%20in%20Azure%20ML%20Studio.png)
 
 
 ## Screen Recording
