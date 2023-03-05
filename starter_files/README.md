@@ -19,13 +19,18 @@ In this project we explore three main areas:
 
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
 
 ![Project Architecture.png](Project%20Architecture.png)
 
+NOTE: This project was not too concerned with the accuracy of the model produced by the AutoML run. That was not the
+focus of the project.  One way to improve the project would be to try and improve the model accuracy. This can be
+done by submitting model using the python SDK. This will allow us to better fine tune some parameters like the 
+experiment time out and iteration time out parameters. We could also exclude some models from the run and thus
+have AutoML spend more time finding and tuning better models.
+
 ## Key Steps
-*TODO*: 
-* Write a short discription of the key steps. Remember to include all the screenshots required to demonstrate key steps. 
+*Below are detailed key steps needed to complete this project along with applicable screenshots*
+
 **Deploy model in Azure ML Studio**
 
 *Configure new AutoML Run*
