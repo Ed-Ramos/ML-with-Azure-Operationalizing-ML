@@ -49,6 +49,36 @@ In this project we explore three main areas:
 - Confirm endpoints section in Azure ML studio shows that "Application Insights enabled" says True
 ![deployed model shows Application Insights enabled as True.png](..%2Fproject2screenshots%2FDeploy%20Model%2Fdeployed%20model%20shows%20Application%20Insights%20enabled%20as%20True.png)
 
+*Consume Endpoint*
+- In Azure ML, go to "endpoints" section find previously deployed model
+- In "details" tab, find the swagger URI.  Download the swagger.json file and place in same directory as the swagger.sh
+and serve.py files. This file has information that the swagger service will transform into a website
+- Run the swagger.sh script file.  This will run the swagger service in a docker container
+- Run the serve.py script which will serve the contents of the current directory
+- Confirm swagger runs on localhost showing the HTTP API methods and responses for the model
+![swagger running screenshot.png](..%2Fproject2screenshots%2FDeploy%20Model%2Fswagger%20running%20screenshot.png)
+- Go to "Consume" tab, obtain endpoint URL and primary key
+- Amend endpoints.py script with above info
+- Run endpoints.py file and confirm the script runs against the API and a proper json output from model
+![enpoint.py run showing jspn output and model prediction.png](..%2Fproject2screenshots%2FDeploy%20Model%2Fenpoint.py%20run%20showing%20jspn%20output%20and%20model%20prediction.png)
+
+*Pipeline Automation*
+- Using the "aml pipeline with automated machine learning step" jupyter notebook, replace the URIs, keys, and experiment
+names to my scenario
+- Run all the jupyter notebook cells until the "Examine Results" section of notebook. Below is screenshot of notebook
+wih stepruns
+![jupyter notebook showing StepRun.png](..%2Fproject2screenshots%2FPublish%20an%20ML%20Pipeline%2Fjupyter%20notebook%20showing%20StepRun.png) 
+- Confirm pipeline is available in the "pipelines" section of Azure Machine Learning Studio
+![pipeline created and completed.png](..%2Fproject2screenshots%2FPublish%20an%20ML%20Pipeline%2Fpipeline%20created%20and%20completed.png)
+- Publish the pipeline by using Python SDK via the jupyter notebook code. Alternatively, we can use Azure ML Studio 
+by going to the "pipelines" section and clicking th pipeline name. Then Click on the "publish" tab on top part.
+- Confirm published pipeline now shows a REST endpoint with status of active
+![published pipeline showing rest endpoint as active.png](..%2Fproject2screenshots%2FPublish%20an%20ML%20Pipeline%2Fpublished%20pipeline%20showing%20rest%20endpoint%20as%20active.png)
+
+- Now that we have an active restpoint, we can interact with it.  We can schedule a run for a later time or trigger the
+run at this time.
+
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
