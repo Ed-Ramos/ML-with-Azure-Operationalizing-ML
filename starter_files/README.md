@@ -18,7 +18,7 @@ In this project we explore three main areas:
 
 ## Architectural Diagram
 
-![Project Architecture.png](Project%20Architecture.png)
+![Project Architecture.png](..%2Fproject2screenshots%2FProject%20Architecture.png)
 
 NOTE: This project was not too concerned with the accuracy of the model produced by the AutoML run. That was not the
 focus of the project.  One way to improve the project would be to try and improve the model accuracy. This can be
